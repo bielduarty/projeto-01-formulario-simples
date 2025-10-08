@@ -1,0 +1,113 @@
+/* reset */
+/* 1° Estilos gerais para a página */
+/* objetivo: criar um fundo e centralizar o nosso cartão. */
+body {
+    background-image: url('../img/img-code2.jpg');
+    /* imagem de fundo.*/
+    background-repeat: no-repeat;
+    /* impede repetição */
+    background-size: cover;
+    /* faz a imagem cobrir o fundo todo */
+    background-position: center;
+    /* centraliza a imagem */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* display FLEX centraliza em linha */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* centraliza verticalmete  */
+    min-height: 100vh;
+    /* garante que body ocupe 100% da altura da tela*/
+    margin: 0;
+    /* Remove qualquer margem padrão do body */
+
+}
+
+/* 2° Estilos do cartão - O foco do nosso estudo! */
+.business-card {
+    /* Dimensões */
+
+    background-color: #000000;
+
+    width: 400px;
+    /* Definir uma largura fixa para o cartão. */
+
+    /* O box model na prática */
+    padding: 30px;
+    /* cria uma borda de tantos para ao redor do conteudo */
+
+    border: 1px solid #0f5deed7;
+    /* A linha que desenha o cartão junto com espessura, estilo e cor */
+
+    border-radius: 50px;
+    /* altera cantos do cartão */
+
+    box-shadow: inset 0 0 20px #0f5deed7,
+        0px 0px 30px #0f5deed7;
+    /* box-shadow: inset add sombras na borda interna do cartão. */
+
+    text-align: center;
+    /* centraliza o texto dentro do cartão */
+}
+
+/* 3°Estilos para os elementos dentro do cartão */
+.card-name {
+    font-size: 35px;
+    color: #ffffff;
+    margin-top: 0;
+    /* Altera a margem entre a borda superior e o h1 do cartão*/
+    margin-bottom: 5px;
+    /* Altera o espaçamento do h1 para oq vem abaixo */
+}
+
+.card-title {
+    font-size: 1.1rem;
+    /* tamanho menor para o titulo */
+    color: #7f8c8d;
+    /* fonte mais leve */
+    margin-top: 0;
+    /* Empurra o elemento pra baixo, afastando do que está acima */
+    margin-bottom: 20px;
+    /* Espaçamento maior antes da linha divisoria */
+}
+
+.card-divider {
+    border: none;
+    /* remove a borda padrão do <hr> */
+    height: 1px;
+    /* define um altura para a linha divisoria */
+    background-color: #dddddd;
+    /*cor cinza clara para a linha divisoria */
+    margin: 0 auto 20px;
+    /* centraliza a linha divisoria e dá espaçamento abaixo */
+    width: 80%;
+    /* faz linha ser um pouco menor que o cartão */
+}
+
+.card-contact {
+    font-size: 1rem;
+    /* tamanho padrão para o contato */
+    color: #ffffff;
+    /* cor um pouco mais escura para o contato */
+    margin-bottom: 10px;
+    /* Empurra pra baixo o que vem depois dele. */
+}
+
+/* Estilo especifico  para o link de e-mail */
+.card-contact a {
+    text-decoration: none;
+    /* remove o sublinahado do link */
+    color: #ce9c13d7;
+    /* cor azul para indicar que o link é clicavél  */
+    transition: color 0.3s;
+    /* Transição suave na cor ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o link */
+.card-contact a:hover {
+    color: #a57e149c;
+    /* muda a cor do link */
+}
